@@ -1,0 +1,42 @@
+#site-container {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--black-font-color);
+    font-family: var(--font-montserrat);
+
+    --header-row-height-percents: 5%;
+
+    --background-color: #F5FBEF;
+    --strong-accent-color: #84C318;
+    --danger-accent-color: #503D42;
+    --accent-one-color: #95B29A;
+    --accent-two-color: #748B75;
+    --footer-bg-color: #C4D4C7;
+    --footer-fg-color: #EBF7DE;
+
+    --black-font-color: #0C090A;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+#page-container {
+    height: 100vh;
+}
+
+#content-container {
+    height: calc(100% - calc(2 * var(--header-row-height-percents)));
+}
+
+.header-row {
+    height: var(--header-row-height-percents);
+}
+
+#footer-container {
+    height: 10vh;
+    background-color: var(--footer-bg-color);
+    color: var(--accent-two-color);
+}
+
+.social-link:hover .social-svg-path {
+    fill: var(--danger-accent-color);
+}
